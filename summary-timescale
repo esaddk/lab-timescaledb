@@ -1,0 +1,23 @@
+1. Konsep Dasar Time-Series Database
+* Apa itu Time-Series Data? Data yang diukur atau dikumpulkan secara berkala, seperti data sensor, harga saham, data cuaca, dll.
+* Mengapa Menggunakan Time-Series Database? Mengelola, meng-query, dan menganalisis data dalam jumlah besar yang berurutan berdasarkan waktu lebih efisien dibandingkan database umum. 
+
+2. TimescaleDB dan PostgreSQL
+* Berbasis PostgreSQL: TimescaleDB adalah ekstensi PostgreSQL, sehingga kompatibel dengan ekosistem dan fitur PostgreSQL.
+* Hypertable: Struktur khusus untuk menangani data time-series. TimescaleDB mempartisi data secara otomatis dengan hypertable sehingga bisa menangani data besar dengan lebih efisien. 
+
+3. Fitur Utama TimescaleDB
+* Continuous Aggregates: Memungkinkan agregasi data time-series secara otomatis dan berkelanjutan, mengurangi beban query.
+* Data Retention Policy: Kebijakan penyimpanan untuk menghapus data lama yang tidak diperlukan.
+* Compression: Kompresi data untuk menghemat ruang penyimpanan.
+* Time-Bucket Function: Memfasilitasi query dengan rentang waktu, seperti mengelompokkan data per hari, minggu, dll. 
+
+4. Langkah Dasar Penggunaan TimescaleDB
+* Instalasi: TimescaleDB dapat diinstall dengan Docker untuk kemudahan penggunaan di komputer lokal.
+* Membuat dan Mengelola Hypertable: Setelah membuat tabel, gunakan create_hypertable() untuk mengubahnya menjadi hypertable.
+* Menggunakan Query Time-Series: Familiarisasi dengan query khusus time-series untuk analisis, seperti time_bucket(). 
+
+5. Optimasi dan Pengelolaan Data
+* Indexing: Buat index pada kolom yang sering digunakan dalam query untuk mempercepat pencarian.
+* Automatic Data Retention: Tetapkan kebijakan otomatis untuk menghapus data lama.
+* Data Compression: Terapkan kompresi untuk mengurangi penggunaan penyimpanan pada data yang jarang diakses.
